@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import DragAndDrop from "./components/DragAndDrop";
+import FabricExample from "./components/FabricExample";
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div className="bg-black p-3 font-bold"><h1 className="text-2xl text-white">Online Design Tool</h1></div>
+    <div className="bg-gray-300 p-1 font-semibold"><p className="">Design Your Print Products Online!</p></div>
+ {/* <DragAndDrop /> */}
+ <FabricExample />
+
+ </div>
+  )
 }
 
 export default App;
